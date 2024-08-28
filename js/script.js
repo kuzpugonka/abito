@@ -5,7 +5,7 @@ const cardWrapper = document.querySelector(".content-main__list");
 const cardArray = [
   {
     id: 0,
-    title: "Пвх материал 2й сорт",
+    title: "Пвх первый сорт",
     price: "170",
     address: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
@@ -13,64 +13,64 @@ const cardArray = [
   },
   {
     id: 1,
-    title: "Пвх материал 2й сорт",
-    price: "170",
+    title: "Пвх второй сорт",
+    price: "171",
     address: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "./img/card-img.png",
   },
   {
     id: 2,
-    title: "Пвх материал 2й сорт",
-    price: "170",
+    title: "Пвх третий сорт",
+    price: "172",
     address: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "./img/card-img.png",
   },
   {
     id: 3,
-    title: "Пвх материал 2й сорт",
-    price: "170",
+    title: "Пвх четвертый сорт",
+    price: "173",
     address: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "./img/card-img.png",
   },
   {
     id: 4,
-    title: "Пвх материал 2й сорт",
-    price: "170",
+    title: "Пвх пятый сорт",
+    price: "174",
     address: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "./img/card-img.png",
   },
   {
     id: 5,
-    title: "Пвх материал 2й сорт",
-    price: "170",
+    title: "Пвх шестой сорт",
+    price: "175",
     address: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "./img/card-img.png",
   },
   {
     id: 6,
-    title: "Пвх материал 2й сорт",
-    price: "170",
+    title: "Пвх седьмой сорт",
+    price: "176",
     address: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "./img/card-img.png",
   },
   {
     id: 7,
-    title: "Пвх материал 2й сорт",
-    price: "170",
+    title: "Пвх восьмой сорт",
+    price: "177",
     address: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "./img/card-img.png",
   },
   {
     id: 8,
-    title: "Пвх материал 2й сорт",
-    price: "170",
+    title: "Пвх девятый сорт",
+    price: "178",
     address: "Казань, р-н Вахитовский",
     date: "10 июля 11:39",
     img: "./img/card-img.png",
@@ -107,10 +107,7 @@ const render = (cardList) => {
 };
 
 const filterArray = (array, value) => {
-  console.log("array: ", array);
-  console.log("value: ", value);
-
-  return array.filter((item) => {
+   return array.filter((item) => {
     return item.title.includes(value) || item.price.includes(value);
   });
 };
@@ -118,5 +115,5 @@ const filterArray = (array, value) => {
 render(cardArray);
 
 searchBtn.addEventListener("click", () => {
-  console.log("searchInput.value: ", searchInput.value);
+  render(filterArray(cardArray, searchInput.value));
 });
