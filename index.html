@@ -8,28 +8,29 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="img/apple-touch-icon.png"
+      href="./img/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="img/favicon-32x32.png"
+      href="./img/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="img/favicon-16x16.png"
+      href="./img/favicon-16x16.png"
     />
-    <link rel="manifest" href="img/site.webmanifest" />
-    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="manifest" href="./img/side.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
     <meta name="msapplication-TileColor" content="#2b5797" />
     <meta name="msapplication-config" content="img/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link href="style.css" rel="stylesheet" />
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -57,11 +58,251 @@
         </div>
       </div>
     </header>
+
     <main>
-      <div class="container"></div>
-      <section></section>
-      <div class="container"></div>
-      <section></section>
+      <section class="search">
+        <div class="container">
+          <h1 class="hidden">Размещение объявлений и покупка товаров</h1>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск по объявлениям" />
+            <button class="btn search-btn">
+              <img
+                class="search-btn__icon"
+                src="./img/search.svg"
+                alt="search"
+                aria-label="Кнопка поиска с изображением лупы"
+              />
+              <span class="search-btn__text">Найти</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container">
+          <div class="content-box">
+            <div class="content-main">
+              <h2 class="content-main__title">Рекомендации для вас</h2>
+
+              <div class="content-main__list">
+                <a href="./single.html" class="content-main__list-item card">
+                  <div class="card__img">
+                    <img
+                      class="card-img"
+                      src="./img/card-img.png"
+                      alt="Изображение товара"
+                    />
+                  </div>
+
+                  <div class="card__info">
+                    <h3 class="card__title">Пвх материал 2й сорт</h3>
+
+                    <p class="card__price">170&nbsp;₽</p>
+
+                    <p class="card__address">Казань, р-н Вахитовский</p>
+
+                    <p class="card__date">10 июля 11:39</p>
+                  </div>
+                </a>
+                <a href="./single.html" class="content-main__list-item card">
+                  <div class="card__img">
+                    <img
+                      class="card-img"
+                      src="./img/card-img.png"
+                      alt="Изображение товара"
+                    />
+                  </div>
+
+                  <div class="card__info">
+                    <h3 class="card__title">Пвх материал 2й сорт</h3>
+
+                    <p class="card__price">170&nbsp;₽</p>
+
+                    <p class="card__address">Казань, р-н Вахитовский</p>
+
+                    <p class="card__date">10 июля 11:39</p>
+                  </div>
+                </a>
+                <a href="./single.html" class="content-main__list-item card">
+                  <div class="card__img">
+                    <img
+                      class="card-img"
+                      src="./img/card-img.png"
+                      alt="Изображение товара"
+                    />
+                  </div>
+
+                  <div class="card__info">
+                    <h3 class="card__title">Пвх материал 2й сорт</h3>
+
+                    <p class="card__price">170&nbsp;₽</p>
+
+                    <p class="card__address">Казань, р-н Вахитовский</p>
+
+                    <p class="card__date">10 июля 11:39</p>
+                  </div>
+                </a>
+                <a href="./single.html" class="content-main__list-item card">
+                  <div class="card__img">
+                    <img
+                      class="card-img"
+                      src="./img/card-img.png"
+                      alt="Изображение товара"
+                    />
+                  </div>
+
+                  <div class="card__info">
+                    <h3 class="card__title">Пвх материал 2й сорт</h3>
+
+                    <p class="card__price">170&nbsp;₽</p>
+
+                    <p class="card__address">Казань, р-н Вахитовский</p>
+
+                    <p class="card__date">10 июля 11:39</p>
+                  </div>
+                </a>
+                <a href="./single.html" class="content-main__list-item card">
+                  <div class="card__img">
+                    <img
+                      class="card-img"
+                      src="./img/card-img.png"
+                      alt="Изображение товара"
+                    />
+                  </div>
+
+                  <div class="card__info">
+                    <h3 class="card__title">Пвх материал 2й сорт</h3>
+
+                    <p class="card__price">170&nbsp;₽</p>
+
+                    <p class="card__address">Казань, р-н Вахитовский</p>
+
+                    <p class="card__date">10 июля 11:39</p>
+                  </div>
+                </a>
+                <a href="./single.html" class="content-main__list-item card">
+                  <div class="card__img">
+                    <img
+                      class="card-img"
+                      src="./img/card-img.png"
+                      alt="Изображение товара"
+                    />
+                  </div>
+
+                  <div class="card__info">
+                    <h3 class="card__title">Пвх материал 2й сорт</h3>
+
+                    <p class="card__price">170&nbsp;₽</p>
+
+                    <p class="card__address">Казань, р-н Вахитовский</p>
+
+                    <p class="card__date">10 июля 11:39</p>
+                  </div>
+                </a>
+                <a href="./single.html" class="content-main__list-item card">
+                  <div class="card__img">
+                    <img
+                      class="card-img"
+                      src="./img/card-img.png"
+                      alt="Изображение товара"
+                    />
+                  </div>
+
+                  <div class="card__info">
+                    <h3 class="card__title">Пвх материал 2й сорт</h3>
+
+                    <p class="card__price">170&nbsp;₽</p>
+
+                    <p class="card__address">Казань, р-н Вахитовский</p>
+
+                    <p class="card__date">10 июля 11:39</p>
+                  </div>
+                </a>
+                <a href="./single.html" class="content-main__list-item card">
+                  <div class="card__img">
+                    <img
+                      class="card-img"
+                      src="./img/card-img.png"
+                      alt="Изображение товара"
+                    />
+                  </div>
+
+                  <div class="card__info">
+                    <h3 class="card__title">Пвх материал 2й сорт</h3>
+
+                    <p class="card__price">170&nbsp;₽</p>
+
+                    <p class="card__address">Казань, р-н Вахитовский</p>
+
+                    <p class="card__date">10 июля 11:39</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="content-side">
+              <h2 class="content-side__title">Сервисы и услуги</h2>
+
+              <div class="content-side__box">
+                <div class="content-side__list">
+                  <a class="content-side__list-item">
+                    <img
+                      class="content-side__list-item--img"
+                      src="./img/delivery.svg"
+                      alt="delivery"
+                    />
+                    <h4 class="content-side__list-item--title">Доставка</h4>
+                    <p class="content-side__list-item--text">
+                      Проверка при получении и возможность бесплатно вернуть
+                      товар
+                    </p>
+                  </a>
+
+                  <a class="content-side__list-item">
+                    <img
+                      class="content-side__list-item--img"
+                      src="./img/autoteka.svg"
+                      alt="autoteka"
+                    />
+                    <h4 class="content-side__list-item--title">Автотека</h4>
+                    <p class="content-side__list-item--text">
+                      Отчёт с историей авто: пробег, владельцы, сведения о
+                      залоге, ДТП и ремонтах
+                    </p>
+                  </a>
+
+                  <a class="content-side__list-item">
+                    <img
+                      class="content-side__list-item--img"
+                      src="./img/home.svg"
+                      alt="home"
+                    />
+                    <h4 class="content-side__list-item--title">
+                      Онлайн-бронирование жилья
+                    </h4>
+                    <p class="content-side__list-item--text">
+                      Посуточная аренда квартир и домов: большой выбор вариантов
+                      для поездок по России
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <footer class="content-side__footer">
+                <p class="content-side__footer--copiright">
+                  © ООО «Абито», 2011–2021
+                </p>
+                <a class="content-side__footer--politics" href="#">
+                  Политика конфиденциальности
+                </a>
+                <a class="content-side__footer--sequrity" href="#">
+                  Обработка данных
+                </a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

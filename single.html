@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abito</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/side.webmanifest" />
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-config" content="img/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-box">
+          <a class="header__logo" href="/index.html">
+            <img
+              src="./img/logo.svg"
+              alt="logo"
+              aria-label="Логотип компании в виде коробки"
+            />
+            <span>Abito</span>
+          </a>
+          <div class="header__controls">
+            <button class="btn btn-outline">Вход и регистрация</button>
+            <button class="btn btn-primery">Подать объявление</button>
+          </div>
+          <div class="header-burger">
+            <img
+              src="./img/burger.svg"
+              alt="burger"
+              aria-label="Кнопка перехода в мобильное меню"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="search">
+        <div class="container">
+          <h1 class="hidden">Размещение объявлений и покупка товаров</h1>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск по объявлениям" />
+            <button class="btn search-btn">
+              <img
+                class="search-btn__icon"
+                src="./img/search.svg"
+                alt="search"
+                aria-label="Кнопка поиска с изображением лупы"
+              />
+              <span class="search-btn__text">Найти</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container">
+          <div class="content-box">
+            <div class="content-product">
+              <div class="content-product__left">
+                <h2 class="content-product__title">Электросамокат kugoo Gx</h2>
+                <img
+                  class="content-product__img"
+                  src="./img/product-img.jpg"
+                  alt="product image"
+                />
+                <p class="content-product__text">
+                  Продаю не спеша самокат в хорошем состоянии. Торг возможен. За
+                  период эксплуатации не выявлено ни одной проблемы. Из минусов
+                  — нужно прокачать задний тормоз. Установлен отсекатель сзади.
+                  Покрышки CST внедорожные. Все на подшипниках, болты протянуты.
+                  Пробег 881км , это немного для такого зверя.
+                </p>
+              </div>
+              
+              <div class="content-product__right">
+                <h2 class="content-product__price">75 000&nbsp;₽</h2>
+                <button class="btn content-product__price-btn">
+                  Показать телефон
+                </button>
+              </div>
+            </div>
+
+            <div class="content-side">
+              <h2 class="content-side__title">Сервисы и услуги</h2>
+
+              <div class="content-side__box">
+                <div class="content-side__list">
+                  <a class="content-side__list-item">
+                    <img
+                      class="content-side__list-item--img"
+                      src="./img/delivery.svg"
+                      alt="delivery"
+                    />
+                    <h4 class="content-side__list-item--title">Доставка</h4>
+                    <p class="content-side__list-item--text">
+                      Проверка при получении и возможность бесплатно вернуть
+                      товар
+                    </p>
+                  </a>
+
+                  <a class="content-side__list-item">
+                    <img
+                      class="content-side__list-item--img"
+                      src="./img/autoteka.svg"
+                      alt="autoteka"
+                    />
+                    <h4 class="content-side__list-item--title">Автотека</h4>
+                    <p class="content-side__list-item--text">
+                      Отчёт с историей авто: пробег, владельцы, сведения о
+                      залоге, ДТП и ремонтах
+                    </p>
+                  </a>
+
+                  <a class="content-side__list-item">
+                    <img
+                      class="content-side__list-item--img"
+                      src="./img/home.svg"
+                      alt="home"
+                    />
+                    <h4 class="content-side__list-item--title">
+                      Онлайн-бронирование жилья
+                    </h4>
+                    <p class="content-side__list-item--text">
+                      Посуточная аренда квартир и домов: большой выбор вариантов
+                      для поездок по России
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <footer class="content-side__footer">
+                <p class="content-side__footer--copiright">
+                  © ООО «Абито», 2011–2021
+                </p>
+                <a class="content-side__footer--politics" href="#">
+                  Политика конфиденциальности
+                </a>
+                <a class="content-side__footer--sequrity" href="#">
+                  Обработка данных
+                </a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
